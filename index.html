@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Cep</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css"  href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Consulta de ENDEREÇOS</h1>
+
+      <form>
+        <input type="text" id="cep" autocomplete="off" required maxlength="8" />
+        <label for="CEP">
+          <span>Insira o CEP</span>
+        </label>
+        <button id="btn">Buscar</button>
+      </form>
+
+      <div id="resultados"></div>
+    </main>
+
+    <button id="dark-mode" >
+      <i class="fa-solid fa-lightbulb"></i>
+    </button>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/js-cookie/dist/js.cookie.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+
